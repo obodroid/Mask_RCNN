@@ -1,0 +1,18 @@
+version: '2.3'
+services:
+  mask-rcnn:
+    build: ./
+    tty: true
+    runtime: nvidia
+    ports:
+      - "8888:8888"
+      - "3000-3010:3000-3010"
+    volumes:
+      - ../:/src:cached
+      - /mnt/nas/COCO:/mnt/nas/COCO:cached
+      - /tmp/.X11-unix/:/tmp/.X11-unix
+    container_name: mask-rcnn
+    network_mode: "bridge"
+    environment:
+      - DISPLAY
+      - QT_X11_NO_MITSHM=1

@@ -4,7 +4,7 @@ Pillow
 cython
 matplotlib
 scikit-image
-tensorflow-gpu~=1.12
+tensorflow-gpu<1.13
 keras
 opencv-python
 h5py
