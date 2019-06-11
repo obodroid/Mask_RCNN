@@ -6,6 +6,10 @@ results/
 temp/
 test/
 
+# sample images
+samples/balloon/dataset/train/*.jpg
+samples/balloon/dataset/val/*.jpg
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
