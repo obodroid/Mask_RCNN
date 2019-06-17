@@ -56,6 +56,8 @@ from mrcnn.config import Config
 from mrcnn import model as modellib, utils
 
 # Path to trained weights file
+# can download here
+# https://github.com/matterport/Mask_RCNN/releases/download/v2.0/mask_rcnn_coco.h5 
 COCO_MODEL_PATH = os.path.join(ROOT_DIR, "mask_rcnn_coco.h5")
 
 # Directory to save logs and model checkpoints, if not provided
