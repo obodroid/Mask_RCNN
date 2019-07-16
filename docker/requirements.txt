@@ -9,4 +9,5 @@ keras==2.1.3
 opencv-python
 h5py
 imgaug
+tqdm
 IPython[all]   

@@ -5,6 +5,7 @@ logs/
 results/
 temp/
 test/
+*.csv
 
 # sample images
 samples/balloon/dataset/train/*.jpg

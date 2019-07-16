@@ -10,6 +10,7 @@ services:
     volumes:
       - ../:/src:cached
       - /mnt/nas/COCO:/mnt/nas/COCO:cached
+      - /mnt/nas/iMaterial:/mnt/nas/iMaterial:cached
       - /tmp/.X11-unix/:/tmp/.X11-unix
     container_name: mask-rcnn
     network_mode: "bridge"
