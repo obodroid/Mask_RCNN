@@ -2361,6 +2361,10 @@ class MaskRCNN():
         else:
             workers = multiprocessing.cpu_count()
 
+        class_weight = None
+        if hasattr(self.config, "class_weight"):
+            class_weight = self.config.class_weight
+        
         self.keras_model.fit_generator(
             train_generator,
             initial_epoch=self.epoch,
@@ -2372,6 +2376,7 @@ class MaskRCNN():
             max_queue_size=100,
             workers=workers,
             use_multiprocessing=True,
+            class_weight=class_weight
         )
         self.epoch = max(self.epoch, epochs)
 
