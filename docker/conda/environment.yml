@@ -1,0 +1,36 @@
+name: mask-rcnn
+channels:
+- !!python/unicode
+  'defaults'
+dependencies:
+- python=3.6
+- pip==9.0.1
+- numpy
+- jupyter==1.0
+- cython==0.29.10
+- matplotlib
+- scikit-learn
+- scipy
+- pandas
+- seaborn
+- h5py
+- conda-forge::opencv
+- imgaug
+- tqdm
+- IPython[all]
+- scikit-image
+- bcolz
+- h5py
+- mkl
+- nose
+- notebook
+- Pillow
+- pydot
+- pygpu
+- pyyaml
+- six
+- theano
+- mkdocs
+- pip:
+  - tensorflow==1.13.1
+  - keras==2.1.3
